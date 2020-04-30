@@ -14,50 +14,50 @@ public class FamilyAccount {
 		String zhichuleixing;
 		int zhichujine;
 		while (isFlag) {
-			System.out.println("----------------¼ÒÍ¥ÊÕÖ§¼ÇÕË±í----------------");
+			System.out.println("----------------å®¶åº­æ”¶æ”¯è®°è´¦è¡¨----------------");
 			//System.out.println(detail+"\n");
-			System.out.println("\t\t1 ÏÔÊ¾¼ÒÍ¥ÊÕÖ§");
-			System.out.println("\t\t2¼ÇÂ¼ÊÕÈëÇé¿ö");
-			System.out.println("\t\t3 ¼ÇÂ¼Ö§³öÇé¿ö");
-			System.out.println("\t\t4 ¼ÇÂ¼Ö§³öÇé¿ö");
+			System.out.println("\t\t1 æ˜¾ç¤ºå®¶åº­æ”¶æ”¯");
+			System.out.println("\t\t2è®°å½•æ”¶å…¥æƒ…å†µ");
+			System.out.println("\t\t3 è®°å½•æ”¯å‡ºæƒ…å†µ");
+			System.out.println("\t\t4 é€€å‡º");
 			System.out.println("----------------------------------------------");
-			System.out.println("ÇëÊäÈë¹¦ÄÜÑ¡Ôñ(1-4)");
+			System.out.println("è¯·è¾“å…¥åŠŸèƒ½é€‰æ‹©(1-4)");
 			
 			choice = scan.next();
 			switch(choice) {
 			case "1":
-				System.out.println("¼ÒÍ¥ÊÕÖ§Çé¿öÈçÏÂ£º");
-				System.out.println("ÊÕÖ§Çé¿ö\t\tÀàĞÍ\t\t½ğ¶î\t\tÓà¶î");
+				System.out.println("å®¶åº­æ”¶æ”¯æƒ…å†µå¦‚ä¸‹:");
+				System.out.println("æ”¶æ”¯æƒ…å†µ\t\tç±»å‹\t\té‡‘é¢\t\tä½™é¢");
 				System.out.println(detail);
 				System.out.println("\n\n");
 				break;
 			case "2":
-				System.out.println("µÇ¼ÇÊÕÈëÇé¿ö£º");
-				System.out.println("ÇëÊäÈëÊÕÈëÀàĞÍ£º");
+				System.out.println("ç™»è®°æ”¶å…¥æƒ…å†µ");
+				System.out.println("è¯·è¾“å…¥æ”¶å…¥ç±»å‹");
 				shouruleixing=scan.next();
-				System.out.println("ÇëÊäÈëÊÕÈë½ğ¶î£º");
+				System.out.println("è¯·è¾“å…¥æ”¶å…¥é‡‘é¢");
 				shourujine=scan.nextInt();
 				sum+=shourujine;
-				detail =detail+"ÊÕÈë\t\t"+shouruleixing+"\t\t"+shourujine+"\t\t"+sum+"\n";
+				detail =detail+"æ”¶å…¥\t\t"+shouruleixing+"\t\t"+shourujine+"\t\t"+sum+"\n";
 				break;
 			case "3":
-				System.out.println("µÇ¼ÇÊÕÈëÇé¿ö£º");
-				System.out.println("ÇëÊäÈëÖ§³öÀàĞÍ£º");
+				System.out.println("ç™»è®°æ”¯å‡ºæƒ…å†µ");
+				System.out.println("è¯·è¾“å…¥æ”¯å‡ºç±»å‹");
 				zhichuleixing=scan.next();
-				System.out.println("ÇëÊäÈëÖ§³ö½ğ¶î£º");
+				System.out.println("è¯·è¾“å…¥æ”¯å‡ºé‡‘é¢");
 				zhichujine=scan.nextInt();
 				sum-=zhichujine;
-				detail =detail+"Ö§³ö\t\t"+zhichuleixing+"\t\t"+zhichujine+"\t\t"+sum+"\n";
+				detail =detail+"Ö§æ”¯å‡º\t\t"+zhichuleixing+"\t\t"+zhichujine+"\t\t"+sum+"\n";
 				break;
 			case "4":
-				System.out.println("È·ÈÏÍË³ö£¿(Y/N)");
+				System.out.println("ç¡®è®¤é€€å‡ºï¼Ÿ(Y/N)");
 				String queren = scan.next();
 				if(queren.equals("Y")) {
 					isFlag = false;
 				}
 				break;
 			default:
-				System.out.println("ÊäÈë´íÎó£¬ÇëÖØĞÂÑ¡Ôñ");	
+				System.out.println("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°é€‰æ‹©");	
 				
 				break;
 			}
