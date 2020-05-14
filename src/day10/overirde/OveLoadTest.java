@@ -1,12 +1,12 @@
 package day10.overirde;
-/*Á·Ï°Ò»
- * ¶¨ÒåÈý¸öÖØÔØ·½·¨²¢µ÷ÓÃ£¬·½·¨ÃûÎªmOL
- * 1 Èý¸ö·½·¨·Ö±ð½ÓÊÕÒ»¸öintÐÍ²ÎÊý£¬Á½¸öintÐÍ²ÎÊý£¬ Ò»¸ö×Ö·û´®ÀàÐÍ
- * 2 Èý¸ö·½·¨·Ö±ðÖ´ÐÐ¼ÆËãÆ½·½£¬¼ÆËã³Ë»ý£¬Êä³ö×Ö·û´®ÐÅÏ¢
- * 3 Ö÷Ààmain·½·¨ÖÐ·Ö±ðÓÃ²ÎÊýÇø·ÖÈý¸ö·½·¨
+/*é‡è½½ç»ƒä¹ 
+ * ç¼–å†™3ä¸ªé‡è½½æ–¹æ³•ï¼Œæ–¹æ³•åç§°ä¸ºmOL
+ * 1 ä¸‰ä¸ªæ–¹æ³•åˆ†åˆ«æŽ¥æ”¶1ä¸ªintåž‹å˜é‡ï¼Œ2ä¸ªintåž‹å˜é‡ï¼Œ1ä¸ªå­—ç¬¦ä¸²å˜é‡
+ * 2 ä¸‰ä¸ªæ–¹æ³•åˆ†åˆ«è®¡ç®—1ä¸ªå‚æ•°çš„å¹³æ–¹ï¼Œ2ä¸ªå‚æ•°çš„ä¹˜ç§¯ï¼Œä¸€ä¸ªå­—ç¬¦ä¸²çš„è¾“å‡º
+ * 3 å®šä¹‰mainæ–¹æ³•åˆ†åˆ«è°ƒç”¨ä¸‰ä¸ªæ–¹æ³•
  * 
- * Á·Ï°¶þ£º
- * 	¶¨ÒåÈý¸öÖØÔØ·½·¨max£¬ µÚÒ»¸ö·½·¨·Ö±ðÇóÁ½¸öintÐÍµÄ×î´óÖµ£¬µÚ¶þ¸öÇó2¸ödoubleÐÍµÄ×î´óÖµ£¬µÚÈý¸öÇó3¸ödoubleÐÍµÄ×î´óÖµ
+ * ç»ƒä¹ 2ï¼Œè®¡ç®—æœ€å¤§å€¼
+ * 	å®šä¹‰ä¸‰ä¸ªmaxæ–¹æ³•ï¼Œç„¶åŽåˆ†åˆ«è®¡ç®—2ä¸ªintåž‹å‚æ•°çš„æœ€å¤§å€¼ï¼Œ2ä¸ªdoubleåž‹çš„æœ€å¤§å€¼ï¼Œ3ä¸ªdoubleåž‹çš„æœ€å¤§å€¼ã€‚
  */
 public class OveLoadTest {
 	public static void main(String[] args) {
