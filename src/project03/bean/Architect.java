@@ -25,6 +25,11 @@ public class Architect extends Designer {
 		return getBasicinfo()+"\t架构师\t"+getStatus()+"\t"+getBonus()+"\t"+getStock()+"\t"+getEquipment();
 	}
 	
+	@Override
+	public String getMemberInfo() {
+		return getMemberId()+"/"+getBasicinfo()+"\t架构师"+"\t"+getBonus()+"\t"+getStock();
+		
+	}
 	
 	
 }

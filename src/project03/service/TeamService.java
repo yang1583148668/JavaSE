@@ -19,6 +19,12 @@ public class TeamService {
 		super();
 		tmEmploye = new Programmer[MAX_MEMBER];
 	}
+	
+	
+	public int getTotal() {
+		return total;
+	}
+
 
 	public Programmer[] getTmEmploye() {
 		return tmEmploye;
@@ -76,11 +82,17 @@ public class TeamService {
 		if(index==-1) {
 			throw new TeamException("要删除的成员不在团队中");
 		}
-		
+		if(tmEmploye[index] instanceof Architect) {
+			architectnum--;
+		}else if(tmEmploye[index] instanceof Designer) {
+			designernum--;
+		}else if(tmEmploye[index] instanceof Programmer) {
+			progammernum--;
+		}
 		System.arraycopy(tmEmploye, index+1, tmEmploye, index, total-1-index);
 		tmEmploye[index].setStatus(Status.FREE);
-		tmEmploye[total]=null;
-		total--;
+		
+		tmEmploye[--total]=null;
 	}
 
 }

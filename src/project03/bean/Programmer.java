@@ -43,4 +43,9 @@ public class Programmer extends Employe {
 		this.status = status;
 	}
 	
+	public String getMemberInfo() {
+		return memberId+"/"+getBasicinfo()+"\t程序员";
+		
+	}
+	
 }

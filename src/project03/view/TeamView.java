@@ -84,8 +84,10 @@ public class TeamView {
 	private void list() {
 		// TODO Auto-generated method stub
 		tmEmployes  = tService.getTmEmploye();
-		for (int i = 0; i < tmEmployes.length; i++) {
-			System.out.println(tmEmployes[i]);
+		System.out.println("--------------------团队成员列表---------------------");
+		System.out.println("TID/ID\t姓名\t年龄\t工资\t职位\t奖金\t股票");
+		for (int i = 0; i < tService.getTotal(); i++) {
+			System.out.println(tmEmployes[i].getMemberInfo());
 		}
 	}
 
